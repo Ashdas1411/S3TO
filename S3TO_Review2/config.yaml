@@ -1,0 +1,37 @@
+project:
+  name: "S3TO"
+  full_name: "Statistical-Skew-Driven SDN Topology Orchestration for Hierarchical Federated Learning"
+
+fl:
+  seed: 42
+  num_clients: 6
+  num_edge_aggregators: 2
+  local_epochs: 1
+  batch_size: 64
+  learning_rate: 0.01
+  rounds: 2
+  samples_per_client: 500
+  target_accuracy: 0.85
+  dataset: "mnist"
+  data_dir: "./data"
+  device: "cpu"
+
+network:
+  telemetry_host: "127.0.0.1"
+  telemetry_port: 9999
+  edge_hosts:
+    edge1: "127.0.0.1"
+    edge2: "127.0.0.1"
+  edge_ports:
+    edge1: 9101
+    edge2: 9102
+  global_host: "127.0.0.1"
+  global_port: 9200
+
+s3to:
+  expected_clients: 6
+  group_size: 3
+
+mininet:
+  controller_ip: "127.0.0.1"
+  controller_port: 6653

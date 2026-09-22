@@ -1,0 +1,5 @@
+# Install these inside WSL/Ubuntu using a Python 3.10 or 3.11 environment.
+# Mininet itself is normally installed from the Ubuntu package/repository.
+ryu==4.34
+eventlet<0.34
+networkx>=2.8
