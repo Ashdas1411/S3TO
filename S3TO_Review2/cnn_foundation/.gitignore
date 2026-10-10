@@ -1,0 +1,21 @@
+# Python environments
+.venv/
+venv/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Downloaded datasets and generated outputs
+data/
+datasets/
+results/
+checkpoints/
+*.pt
+*.pth
+
+# Local configuration and test caches
+.env
+*.log
+.pytest_cache/

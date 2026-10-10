@@ -1,0 +1,3 @@
+# Install builds compatible with the current operating system.
+torch
+torchvision
