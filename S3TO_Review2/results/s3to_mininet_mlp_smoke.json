@@ -1,0 +1,104 @@
+{
+  "model": "mlp",
+  "dataset": "real_mnist",
+  "assignment": {
+    "0": "edge1",
+    "1": "edge1",
+    "3": "edge1",
+    "2": "edge2",
+    "4": "edge2",
+    "5": "edge2"
+  },
+  "histograms": {
+    "0": [
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "1": [
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0
+    ],
+    "4": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0
+    ],
+    "5": [
+      125.0,
+      0.0,
+      0.0,
+      125.0,
+      0.0,
+      0.0,
+      125.0,
+      0.0,
+      0.0,
+      125.0
+    ]
+  },
+  "results": [
+    {
+      "round": 1,
+      "accuracy": 0.0865,
+      "wall_clock_sec": 21.177987098693848,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    }
+  ],
+  "transport": "Mininet TCP client-to-edge and edge-to-global",
+  "note": "Local training is orchestrated by the runner; model updates are transmitted from Mininet client namespaces."
+}

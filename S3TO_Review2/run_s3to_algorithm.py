@@ -17,6 +17,8 @@ def main(args):
         num_clients=cfg["fl"]["num_clients"],
         samples_per_client=cfg["fl"]["samples_per_client"],
         seed=cfg["fl"]["seed"],
+        mode=cfg["fl"].get("partition_mode", "fixed"),
+        dirichlet_alpha=float(cfg["fl"].get("dirichlet_alpha", 0.5)),
     )
     histograms = {cid: label_histogram(train_ds, inds).tolist() for cid, inds in partitions.items()}
     result = S3TOEngine(cfg["s3to"]["group_size"]).decide(histograms)

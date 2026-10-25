@@ -1,0 +1,253 @@
+{
+  "model": "mlp",
+  "dataset": "real_mnist",
+  "assignment": {
+    "0": "edge1",
+    "1": "edge1",
+    "3": "edge1",
+    "2": "edge2",
+    "4": "edge2",
+    "5": "edge2"
+  },
+  "histograms": {
+    "0": [
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "1": [
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0
+    ],
+    "4": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0
+    ],
+    "5": [
+      125.0,
+      0.0,
+      0.0,
+      125.0,
+      0.0,
+      0.0,
+      125.0,
+      0.0,
+      0.0,
+      125.0
+    ]
+  },
+  "results": [
+    {
+      "round": 1,
+      "accuracy": 0.0932,
+      "wall_clock_sec": 23.07951855659485,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 2,
+      "accuracy": 0.1861,
+      "wall_clock_sec": 23.563339710235596,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 3,
+      "accuracy": 0.2802,
+      "wall_clock_sec": 22.691580533981323,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 4,
+      "accuracy": 0.3278,
+      "wall_clock_sec": 22.624801635742188,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 5,
+      "accuracy": 0.3485,
+      "wall_clock_sec": 22.890735387802124,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 6,
+      "accuracy": 0.3512,
+      "wall_clock_sec": 22.030051231384277,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 7,
+      "accuracy": 0.3543,
+      "wall_clock_sec": 21.8487606048584,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 8,
+      "accuracy": 0.363,
+      "wall_clock_sec": 22.265358448028564,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 9,
+      "accuracy": 0.3922,
+      "wall_clock_sec": 22.612675666809082,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    },
+    {
+      "round": 10,
+      "accuracy": 0.4151,
+      "wall_clock_sec": 21.012964010238647,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    }
+  ],
+  "openflow_counters": {
+    "s1": {
+      "returncode": 0,
+      "packets_total": 2214,
+      "bytes_total": 17736466,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=225.629s, table=0, n_packets=341, n_bytes=4419594, priority=100,ip,nw_src=10.0.0.11,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=225.629s, table=0, n_packets=240, n_bytes=4411700, priority=100,ip,nw_src=10.0.0.12,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=225.629s, table=0, n_packets=263, n_bytes=4413254, priority=100,ip,nw_src=10.0.0.14,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=225.629s, table=0, n_packets=242, n_bytes=4411922, priority=100,ip,nw_src=10.0.0.101,nw_dst=10.0.0.103 actions=output:3\n cookie=0x0, duration=225.629s, table=0, n_packets=216, n_bytes=14886, priority=100,ip,nw_src=10.0.0.103,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=231.616s, table=0, n_packets=912, n_bytes=65110, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    },
+    "s2": {
+      "returncode": 0,
+      "packets_total": 2196,
+      "bytes_total": 17735290,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=225.634s, table=0, n_packets=263, n_bytes=4413254, priority=100,ip,nw_src=10.0.0.14,nw_dst=10.0.0.101 actions=output:3\n cookie=0x0, duration=225.634s, table=0, n_packets=349, n_bytes=4420134, priority=100,ip,nw_src=10.0.0.13,nw_dst=10.0.0.102 actions=output:4\n cookie=0x0, duration=225.634s, table=0, n_packets=242, n_bytes=4411922, priority=100,ip,nw_src=10.0.0.101,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=225.633s, table=0, n_packets=216, n_bytes=14886, priority=100,ip,nw_src=10.0.0.103,nw_dst=10.0.0.101 actions=output:3\n cookie=0x0, duration=225.633s, table=0, n_packets=230, n_bytes=4411130, priority=100,ip,nw_src=10.0.0.102,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=225.633s, table=0, n_packets=210, n_bytes=14490, priority=100,ip,nw_src=10.0.0.103,nw_dst=10.0.0.102 actions=output:4\n cookie=0x0, duration=231.620s, table=0, n_packets=686, n_bytes=49474, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    },
+    "s3": {
+      "returncode": 0,
+      "packets_total": 2145,
+      "bytes_total": 17731936,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=225.637s, table=0, n_packets=349, n_bytes=4420134, priority=100,ip,nw_src=10.0.0.13,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=225.637s, table=0, n_packets=235, n_bytes=4411382, priority=100,ip,nw_src=10.0.0.15,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=225.637s, table=0, n_packets=233, n_bytes=4411274, priority=100,ip,nw_src=10.0.0.16,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=225.637s, table=0, n_packets=230, n_bytes=4411130, priority=100,ip,nw_src=10.0.0.102,nw_dst=10.0.0.103 actions=output:4\n cookie=0x0, duration=225.637s, table=0, n_packets=210, n_bytes=14490, priority=100,ip,nw_src=10.0.0.103,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=231.624s, table=0, n_packets=888, n_bytes=63526, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    }
+  },
+  "transport": "Mininet TCP client-to-edge and edge-to-global",
+  "note": "Local training is orchestrated by the runner; model updates are transmitted from Mininet client namespaces."
+}

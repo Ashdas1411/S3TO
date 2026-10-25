@@ -3,6 +3,8 @@ project:
   full_name: "Statistical-Skew-Driven SDN Topology Orchestration for Hierarchical Federated Learning"
 
 fl:
+  partition_mode: "fixed"
+  dirichlet_alpha: 0.5
   seed: 42
   num_clients: 6
   num_edge_aggregators: 2

@@ -1,0 +1,61 @@
+{
+  "model": "mlp",
+  "dataset": "real_mnist",
+  "dataset_fallback_used": false,
+  "data_dir": "/home/arkad/s3to/data",
+  "device": "cpu",
+  "train_samples": 60000,
+  "test_samples": 10000,
+  "results": [
+    {
+      "round": 1,
+      "accuracy": 0.0899,
+      "wall_clock_sec": 2.4393091201782227
+    },
+    {
+      "round": 2,
+      "accuracy": 0.1772,
+      "wall_clock_sec": 2.1097934246063232
+    },
+    {
+      "round": 3,
+      "accuracy": 0.257,
+      "wall_clock_sec": 2.0033466815948486
+    },
+    {
+      "round": 4,
+      "accuracy": 0.3313,
+      "wall_clock_sec": 2.0266377925872803
+    },
+    {
+      "round": 5,
+      "accuracy": 0.3638,
+      "wall_clock_sec": 1.9926021099090576
+    },
+    {
+      "round": 6,
+      "accuracy": 0.3666,
+      "wall_clock_sec": 2.102564573287964
+    },
+    {
+      "round": 7,
+      "accuracy": 0.3686,
+      "wall_clock_sec": 2.2315783500671387
+    },
+    {
+      "round": 8,
+      "accuracy": 0.3704,
+      "wall_clock_sec": 2.12874174118042
+    },
+    {
+      "round": 9,
+      "accuracy": 0.3779,
+      "wall_clock_sec": 2.1869966983795166
+    },
+    {
+      "round": 10,
+      "accuracy": 0.4113,
+      "wall_clock_sec": 2.23968243598938
+    }
+  ]
+}

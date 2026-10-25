@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Local environments and sensitive configuration
+.venv/
+venv/
+data/
+.env
+
+# Logs and temporary runtime files
+*.log
+*.pid
+
+# Temporary source/config backups
+*.bak
+*.bak-*
+*.backup*
+*.pre-syntax-fix*
+
+# Local hardware test directories and generated datasets
+results/hardware/*/
+results/hardware/*.npz
+results/hardware/*.pt

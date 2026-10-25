@@ -1,0 +1,374 @@
+{
+  "experiment": "S3TO Path A network comparison",
+  "aggregation_mode": "direct",
+  "model": "mlp",
+  "dataset": "real_mnist",
+  "config": {
+    "seed": 44,
+    "partition_mode": "fixed",
+    "dirichlet_alpha": 0.5,
+    "num_clients": 6,
+    "samples_per_client": 500,
+    "local_epochs": 5,
+    "batch_size": 64,
+    "learning_rate": 0.01,
+    "rounds": 10,
+    "device": "cpu"
+  },
+  "assignment": {
+    "0": "global",
+    "1": "global",
+    "2": "global",
+    "3": "global",
+    "4": "global",
+    "5": "global"
+  },
+  "histograms": {
+    "0": [
+      250,
+      250,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "1": [
+      0,
+      0,
+      250,
+      250,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "2": [
+      0,
+      0,
+      0,
+      0,
+      250,
+      250,
+      0,
+      0,
+      0,
+      0
+    ],
+    "3": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      250,
+      250,
+      0,
+      0
+    ],
+    "4": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      250,
+      250
+    ],
+    "5": [
+      125,
+      0,
+      0,
+      125,
+      0,
+      0,
+      125,
+      0,
+      0,
+      125
+    ]
+  },
+  "partition_sha256_by_client": {
+    "0": "1213f8c3e609e95ccb68fda18ed04f62bb9fa199b4266340d626d5226a5a82a0",
+    "1": "bad8eed8e97e85a16f765313f54dbe227192137a51f11b6fcd8cf335d94b697d",
+    "2": "6d60a5750c3709210a27106c28f70d02f60839ea7bce471b714b8563e651e996",
+    "3": "86ebdacca4d7731b65ae08da7f9ffc8820a1a5bb418bbaebec2a47fe43473a75",
+    "4": "078a8c5d6582efe15e1e424fb4ccaa98a63134a557c9c5b575924e87a600ae47",
+    "5": "2459159a304ef0a73d6e24a0192f5524af167ac1799190c0424760dbf321c00a"
+  },
+  "data_summary": {
+    "full_training_examples_available": 60000,
+    "test_examples": 10000,
+    "federated_training_examples_per_round": 3000
+  },
+  "initial_model_sha256": "8241e9bb8acac6ccb66331eaa6587322893c1ef7ff9902fa457f1a7d6edfa790",
+  "results": [
+    {
+      "round": 1,
+      "accuracy": 0.101,
+      "wall_clock_sec": 15.831355333328247,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 2,
+      "accuracy": 0.101,
+      "wall_clock_sec": 16.391457080841064,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 3,
+      "accuracy": 0.1192,
+      "wall_clock_sec": 15.653950929641724,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 4,
+      "accuracy": 0.2094,
+      "wall_clock_sec": 15.382659435272217,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 5,
+      "accuracy": 0.259,
+      "wall_clock_sec": 15.283884525299072,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 6,
+      "accuracy": 0.2838,
+      "wall_clock_sec": 14.205179214477539,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 7,
+      "accuracy": 0.3319,
+      "wall_clock_sec": 14.464331865310669,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 8,
+      "accuracy": 0.344,
+      "wall_clock_sec": 14.273809671401978,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 9,
+      "accuracy": 0.369,
+      "wall_clock_sec": 14.456269025802612,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    },
+    {
+      "round": 10,
+      "accuracy": 0.3927,
+      "wall_clock_sec": 14.103330612182617,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "global",
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global"
+      },
+      "aggregation_mode": "direct"
+    }
+  ],
+  "openflow_counters": {
+    "s1": {
+      "returncode": 0,
+      "parsed_flow_count": 5,
+      "packets_total": 1318,
+      "bytes_total": 11770616,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=151.055s, table=0, n_packets=325, n_bytes=5861991, priority=110,ip,nw_src=10.0.0.11,nw_dst=10.0.0.103 actions=output:3\n cookie=0x0, duration=151.055s, table=0, n_packets=294, n_bytes=20215, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.11 actions=output:1\n cookie=0x0, duration=151.055s, table=0, n_packets=327, n_bytes=5862123, priority=110,ip,nw_src=10.0.0.12,nw_dst=10.0.0.103 actions=output:3\n cookie=0x0, duration=151.055s, table=0, n_packets=291, n_bytes=20017, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.12 actions=output:2\n cookie=0x0, duration=157.586s, table=0, n_packets=81, n_bytes=6270, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    },
+    "s2": {
+      "returncode": 0,
+      "parsed_flow_count": 13,
+      "packets_total": 3748,
+      "bytes_total": 35296404,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=151.059s, table=0, n_packets=325, n_bytes=5861991, priority=110,ip,nw_src=10.0.0.11,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=151.059s, table=0, n_packets=294, n_bytes=20215, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.11 actions=output:3\n cookie=0x0, duration=151.059s, table=0, n_packets=327, n_bytes=5862123, priority=110,ip,nw_src=10.0.0.12,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=151.059s, table=0, n_packets=291, n_bytes=20017, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.12 actions=output:3\n cookie=0x0, duration=151.059s, table=0, n_packets=321, n_bytes=5861727, priority=110,ip,nw_src=10.0.0.13,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=151.059s, table=0, n_packets=289, n_bytes=19885, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.13 actions=output:1\n cookie=0x0, duration=151.059s, table=0, n_packets=324, n_bytes=5861925, priority=110,ip,nw_src=10.0.0.14,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=151.059s, table=0, n_packets=285, n_bytes=19621, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.14 actions=output:2\n cookie=0x0, duration=151.059s, table=0, n_packets=324, n_bytes=5861925, priority=110,ip,nw_src=10.0.0.15,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=151.059s, table=0, n_packets=292, n_bytes=20083, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.15 actions=output:4\n cookie=0x0, duration=151.059s, table=0, n_packets=314, n_bytes=5861265, priority=110,ip,nw_src=10.0.0.16,nw_dst=10.0.0.103 actions=output:5\n cookie=0x0, duration=151.059s, table=0, n_packets=281, n_bytes=19357, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.16 actions=output:4\n cookie=0x0, duration=157.589s, table=0, n_packets=81, n_bytes=6270, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    },
+    "s3": {
+      "returncode": 0,
+      "parsed_flow_count": 5,
+      "packets_total": 1292,
+      "bytes_total": 11768900,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=151.064s, table=0, n_packets=324, n_bytes=5861925, priority=110,ip,nw_src=10.0.0.15,nw_dst=10.0.0.103 actions=output:4\n cookie=0x0, duration=151.064s, table=0, n_packets=292, n_bytes=20083, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.15 actions=output:1\n cookie=0x0, duration=151.064s, table=0, n_packets=314, n_bytes=5861265, priority=110,ip,nw_src=10.0.0.16,nw_dst=10.0.0.103 actions=output:4\n cookie=0x0, duration=151.064s, table=0, n_packets=281, n_bytes=19357, priority=110,ip,nw_src=10.0.0.103,nw_dst=10.0.0.16 actions=output:2\n cookie=0x0, duration=157.595s, table=0, n_packets=81, n_bytes=6270, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    }
+  },
+  "network_metrics": {
+    "aggregation_mode": "direct",
+    "ipv4_forwarding_egress_byte_hops": {
+      "all_origins": {
+        "packets": 6115,
+        "bytes": 58817110,
+        "flow_count": 20
+      },
+      "client_originated": {
+        "packets": 3225,
+        "bytes": 58618260,
+        "flow_count": 10
+      },
+      "edge_originated": {
+        "packets": 0,
+        "bytes": 0,
+        "flow_count": 0
+      },
+      "global_originated": {
+        "packets": 2890,
+        "bytes": 198850,
+        "flow_count": 10
+      },
+      "other_originated": {
+        "packets": 0,
+        "bytes": 0,
+        "flow_count": 0
+      },
+      "definition": "Sum of IPv4 forwarding-rule counters with physical output ports. Each traversal across a switch egress contributes bytes, so transit traffic is counted once per hop; this is a network-load proxy, not unique end-to-end bytes or application payload bytes."
+    },
+    "global_host_link_at_s2_port5": {
+      "uploads_to_global": {
+        "packets": 1935,
+        "bytes": 35170956,
+        "flow_count": 6
+      },
+      "responses_from_global": {
+        "packets": 1732,
+        "bytes": 119178,
+        "flow_count": 6
+      },
+      "edge_to_global_uploads": {
+        "packets": 0,
+        "bytes": 0,
+        "flow_count": 0
+      },
+      "client_to_global_uploads": {
+        "packets": 1935,
+        "bytes": 35170956,
+        "flow_count": 6
+      },
+      "edge_responses_from_global": {
+        "packets": 0,
+        "bytes": 0,
+        "flow_count": 0
+      },
+      "client_responses_from_global": {
+        "packets": 1732,
+        "bytes": 119178,
+        "flow_count": 6
+      },
+      "unexpected_uploads": {
+        "packets": 0,
+        "bytes": 0,
+        "flow_count": 0
+      },
+      "unexpected_responses_from_global": {
+        "packets": 0,
+        "bytes": 0,
+        "flow_count": 0
+      },
+      "bidirectional_bytes": 35290134,
+      "scope_note": "These are OpenFlow forwarding counters for model-update transport and its TCP/application responses. The current runner does not transmit the global model down to clients over Mininet, so these are not a complete accounting of all possible federated-learning communication."
+    },
+    "raw_switch_flow_counter_sums_including_non_forwarding_rules": {
+      "packet_sum": 6358,
+      "byte_sum": 58835920,
+      "warning": "These raw sums can include non-forwarding flow entries and duplicate transit traffic; do not report them as unique bytes or payload bytes. Use ipv4_forwarding_egress_byte_hops for the forwarding-load proxy."
+    }
+  },
+  "transport": "Mininet TCP client-to-global direct FedAvg using bounded JSON/tensor framing",
+  "note": "Training is orchestrated by the runner, but all model-update messages traverse Mininet host namespaces. The s2 port-5 counters uniquely measure traffic crossing the global host link. Summed per-switch byte counters are byte-hops and are not unique bytes."
+}

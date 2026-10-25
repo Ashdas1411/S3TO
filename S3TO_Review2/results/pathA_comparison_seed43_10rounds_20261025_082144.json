@@ -1,0 +1,140 @@
+{
+  "comparison": "S3TO hierarchical vs direct FedAvg",
+  "controlled_config": {
+    "seed": 43,
+    "partition_mode": "fixed",
+    "dirichlet_alpha": 0.5,
+    "num_clients": 6,
+    "samples_per_client": 500,
+    "local_epochs": 5,
+    "batch_size": 64,
+    "learning_rate": 0.01,
+    "rounds": 10,
+    "device": "cpu"
+  },
+  "final_accuracy_pct": {
+    "s3to_hierarchical": 41.13,
+    "direct_fedavg": 41.13,
+    "direct_minus_s3to_percentage_points": 0.0,
+    "within_configured_tolerance": true,
+    "tolerance_percentage_points": 0.1
+  },
+  "wall_clock": {
+    "s3to_total_round_seconds": 206.53711104393005,
+    "direct_total_round_seconds": 145.1588327884674,
+    "direct_minus_s3to_seconds": -61.37827825546265,
+    "s3to_mean_round_seconds": 20.653711104393004,
+    "direct_mean_round_seconds": 14.51588327884674
+  },
+  "global_host_link": {
+    "s3to_upload_packets": 603,
+    "s3to_upload_bytes": 11720900,
+    "direct_upload_packets": 1921,
+    "direct_upload_bytes": 35170032,
+    "s3to_upload_byte_reduction_vs_direct_pct": 66.67361576469422,
+    "s3to_response_packets_from_global": 546,
+    "s3to_response_bytes_from_global": 37618,
+    "direct_response_packets_from_global": 1724,
+    "direct_response_bytes_from_global": 118650,
+    "interpretation": "OpenFlow forwarding-rule counters track client/edge updates toward the global host and responses returning from it. This runner does not send the global model to clients over Mininet; these are not full-FL downlink totals."
+  },
+  "network_load_proxy": {
+    "s3to_ipv4_forwarding_byte_hops": 70611266,
+    "direct_ipv4_forwarding_byte_hops": 58815130,
+    "s3to_byte_hop_reduction_vs_direct_pct": -20.05629503836852,
+    "s3to_client_originated_byte_hops": 46913256,
+    "direct_client_originated_byte_hops": 58616940,
+    "client_originated_byte_hop_reduction_vs_direct_pct": 19.966385143953268,
+    "s3to_edge_originated_byte_hops": 23622774,
+    "direct_edge_originated_byte_hops": 0,
+    "definition": "Sum of IPv4 forwarding-rule byte counters across switch egress ports. This counts each traversed hop and is not unique traffic volume or application payload bytes."
+  },
+  "initial_model_sha256": "01afea5431726f50221d8c5a2c8da31d92a7b7359305c04b58682300938d58c6",
+  "rounds": [
+    {
+      "round": 1,
+      "s3to_accuracy_pct": 8.99,
+      "direct_accuracy_pct": 8.99,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 21.642438411712646,
+      "direct_wall_clock_sec": 15.056156635284424
+    },
+    {
+      "round": 2,
+      "s3to_accuracy_pct": 17.72,
+      "direct_accuracy_pct": 17.72,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 21.672886848449707,
+      "direct_wall_clock_sec": 14.716456890106201
+    },
+    {
+      "round": 3,
+      "s3to_accuracy_pct": 25.7,
+      "direct_accuracy_pct": 25.7,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.63220453262329,
+      "direct_wall_clock_sec": 14.252592086791992
+    },
+    {
+      "round": 4,
+      "s3to_accuracy_pct": 33.129999999999995,
+      "direct_accuracy_pct": 33.129999999999995,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.15227198600769,
+      "direct_wall_clock_sec": 14.57671570777893
+    },
+    {
+      "round": 5,
+      "s3to_accuracy_pct": 36.38,
+      "direct_accuracy_pct": 36.38,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.678945541381836,
+      "direct_wall_clock_sec": 14.233653783798218
+    },
+    {
+      "round": 6,
+      "s3to_accuracy_pct": 36.66,
+      "direct_accuracy_pct": 36.66,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.677029371261597,
+      "direct_wall_clock_sec": 14.453414678573608
+    },
+    {
+      "round": 7,
+      "s3to_accuracy_pct": 36.86,
+      "direct_accuracy_pct": 36.86,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.09490394592285,
+      "direct_wall_clock_sec": 14.269947528839111
+    },
+    {
+      "round": 8,
+      "s3to_accuracy_pct": 37.04,
+      "direct_accuracy_pct": 37.04,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.356609106063843,
+      "direct_wall_clock_sec": 14.34324312210083
+    },
+    {
+      "round": 9,
+      "s3to_accuracy_pct": 37.79,
+      "direct_accuracy_pct": 37.79,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.13062047958374,
+      "direct_wall_clock_sec": 15.073553562164307
+    },
+    {
+      "round": 10,
+      "s3to_accuracy_pct": 41.13,
+      "direct_accuracy_pct": 41.13,
+      "direct_minus_s3to_pp": 0.0,
+      "s3to_wall_clock_sec": 20.49920082092285,
+      "direct_wall_clock_sec": 14.183098793029785
+    }
+  ],
+  "warnings": [
+    "The comparison is valid only for the same host, topology, and load conditions.",
+    "Direct-vs-hierarchical accuracy difference is measured, not assumed to be zero.",
+    "Switch-observed byte sums are byte-hops and must not be reported as unique bytes."
+  ]
+}

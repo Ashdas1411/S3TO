@@ -149,15 +149,38 @@ class S3TORyu(app_manager.RyuApp):
                 result = self.engine.decide(self.telemetry)
                 self.assignment = result.assignment
                 self.logger.info("S3TO assignment: %s", self.assignment)
+                self.install_assignment_flows()
             sock.sendto(json.dumps({"status": "ready" if self.assignment else "collecting", "assignment": self.assignment}).encode(), addr)
         elif kind == "apply_assignment":
             self.assignment = {int(k): v for k, v in msg["assignment"].items()}
             self.install_assignment_flows()
             sock.sendto(json.dumps({"status": "flows_installed", "assignment": self.assignment}).encode(), addr)
         elif kind == "reset":
+            self.clear_assignment_flows()
             self.telemetry.clear()
             self.assignment.clear()
             sock.sendto(json.dumps({"status": "reset"}).encode(), addr)
+
+    def clear_assignment_flows(self):
+        # Remove old S3TO IPv4 rules for every client on each connected switch.
+        for datapath in list(self.datapaths.values()):
+            parser = datapath.ofproto_parser
+            ofproto = datapath.ofproto
+            for client_ip in CLIENT_IPS.values():
+                match = parser.OFPMatch(
+                    eth_type=ether_types.ETH_TYPE_IP,
+                    ipv4_src=client_ip,
+                )
+                mod = parser.OFPFlowMod(
+                    datapath=datapath,
+                    command=ofproto.OFPFC_DELETE,
+                    table_id=ofproto.OFPTT_ALL,
+                    out_port=ofproto.OFPP_ANY,
+                    out_group=ofproto.OFPG_ANY,
+                    match=match,
+                )
+                datapath.send_msg(mod)
+        self.logger.info("Cleared previous S3TO client forwarding rules")
 
     def install_assignment_flows(self):
         parser_by_dpid = {dpid: dp.ofproto_parser for dpid, dp in self.datapaths.items()}

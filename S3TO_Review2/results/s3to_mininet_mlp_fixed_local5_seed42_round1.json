@@ -1,0 +1,127 @@
+{
+  "model": "mlp",
+  "dataset": "real_mnist",
+  "assignment": {
+    "0": "edge1",
+    "1": "edge1",
+    "3": "edge1",
+    "2": "edge2",
+    "4": "edge2",
+    "5": "edge2"
+  },
+  "histograms": {
+    "0": [
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "1": [
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0,
+      0.0,
+      0.0
+    ],
+    "4": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      250.0,
+      250.0
+    ],
+    "5": [
+      125.0,
+      0.0,
+      0.0,
+      125.0,
+      0.0,
+      0.0,
+      125.0,
+      0.0,
+      0.0,
+      125.0
+    ]
+  },
+  "results": [
+    {
+      "round": 1,
+      "accuracy": 0.0932,
+      "wall_clock_sec": 22.26723051071167,
+      "aggregated_samples": 3000,
+      "assignment": {
+        "0": "edge1",
+        "1": "edge1",
+        "3": "edge1",
+        "2": "edge2",
+        "4": "edge2",
+        "5": "edge2"
+      }
+    }
+  ],
+  "openflow_counters": {
+    "s1": {
+      "returncode": 0,
+      "packets_total": 553,
+      "bytes_total": 1796335,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=23.284s, table=0, n_packets=33, n_bytes=441882, priority=100,ip,nw_src=10.0.0.11,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=23.284s, table=0, n_packets=24, n_bytes=441164, priority=100,ip,nw_src=10.0.0.12,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=23.284s, table=0, n_packets=26, n_bytes=441296, priority=100,ip,nw_src=10.0.0.14,nw_dst=10.0.0.101 actions=output:4\n cookie=0x0, duration=29.539s, table=0, n_packets=470, n_bytes=471993, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    },
+    "s2": {
+      "returncode": 0,
+      "packets_total": 1171,
+      "bytes_total": 1837129,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=23.289s, table=0, n_packets=26, n_bytes=441296, priority=100,ip,nw_src=10.0.0.14,nw_dst=10.0.0.101 actions=output:3\n cookie=0x0, duration=23.289s, table=0, n_packets=37, n_bytes=442146, priority=100,ip,nw_src=10.0.0.13,nw_dst=10.0.0.102 actions=output:4\n cookie=0x0, duration=29.544s, table=0, n_packets=1108, n_bytes=953687, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    },
+    "s3": {
+      "returncode": 0,
+      "packets_total": 557,
+      "bytes_total": 1796623,
+      "raw_flows": "OFPST_FLOW reply (OF1.3) (xid=0x2):\n cookie=0x0, duration=23.293s, table=0, n_packets=37, n_bytes=442146, priority=100,ip,nw_src=10.0.0.13,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=23.293s, table=0, n_packets=23, n_bytes=441110, priority=100,ip,nw_src=10.0.0.15,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=23.293s, table=0, n_packets=22, n_bytes=441044, priority=100,ip,nw_src=10.0.0.16,nw_dst=10.0.0.102 actions=output:3\n cookie=0x0, duration=29.548s, table=0, n_packets=475, n_bytes=472323, priority=0 actions=CONTROLLER:65535\n",
+      "stderr": ""
+    }
+  },
+  "transport": "Mininet TCP client-to-edge and edge-to-global",
+  "note": "Local training is orchestrated by the runner; model updates are transmitted from Mininet client namespaces."
+}
